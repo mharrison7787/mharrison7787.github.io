@@ -11,7 +11,9 @@
     "bootstrap": "^5.3.0",
     "core-js": "^3.8.3",
     "vue": "^2.6.14",
-    "vue-router": "^3.6.5"
+    "vue-router": "^3.6.5",
+    "vue-youtube": "^1.4.0",
+    "vue-youtube-embed": "^2.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

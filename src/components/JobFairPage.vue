@@ -42,15 +42,18 @@
 
 
         </p>
+        <TCNBottmNavbar></TCNBottmNavbar>
     </div>
 </template>
 
 <script>
 import TCNnavbar from '@/components/TCNnavbar.vue';
+import TCNBottmNavbar from '@/components/TCNBottmNavbar.vue';
 export default {
     name: 'JobFairPage',
     components: {
         TCNnavbar,
+        TCNBottmNavbar
     },
     data() {
         return {

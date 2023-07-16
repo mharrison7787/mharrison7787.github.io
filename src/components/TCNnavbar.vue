@@ -51,6 +51,7 @@ body {
   list-style: none;
   margin: auto;
   justify-content: right;
+  align-items: center;
 }
 
 .navbar-item {
@@ -70,7 +71,7 @@ body {
 
 .navbar-item.clickable:hover {
   color: black;
-  background-color: #ecb431;
+  background-color: #EEB111;
 
 }
 
@@ -97,7 +98,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 3px;
-  background-color: #ecb431;
+  background-color: #EEB111;
 
 }
 </style>

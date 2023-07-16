@@ -1,54 +1,59 @@
 <template>
   <div>
     <TCNnavbar></TCNnavbar>
-    <h1 class="tcnHeading" style="text-align: center;">
-      <br>
-      <span style="font-size: 70%">
-        <br> Millersville University's</span> <br>
-      <span style="font-size: 200%">TECHNOLOGY CAREER NETWORK </span>
-      <br>
-      Jumpstart your Technology Career!
-    </h1>
+    <div class="tcnHeading">
+      <div class="tcnBackground"></div>
+      <h4><strong>Millersville University's</strong></h4>
+      <h1><strong>TECHNOLOGY CAREER NETWORK</strong></h1>
+    </div>
 
-    <p style="text-align: center;">Welcome to the offical TCN Millersville Univeristy Website. Here at TCN we are a club
-      for professional development,
-      networking, and sharing resources with other technology majors.
-      <br>
-      Our goal here is simple: To help everyone in the CS department! Whether your a new incoming freshman or a senior
-      ready to
-      graduate it can be difficult to know where to start in the industry and preparing for such.
-      Interviews, resumes, job market, interships, cover letters, linkedInm it all can be a lot to handle.
-      Thats where we come in! We want to help guide that processes so everyone can be more prepared for the real world!
-      <br>
-      <br>
-      <br>
-      We host events geared to support career development for everyone in the CS & STEM majors at Millersville so all are
-      welcome.
-      We will be having guest speakers, networking, and workshops such as resume-building and mock interviews throughout
-      the fall 2023
-      and spring 2023 semester. The TCN is here for your opportunity to jumpstart your Technology Career!
-      <br>
-      <br>
-      <br>
-      Interested in joining the TCN?
-      You can officially join the club
-      by visiting Millersville's
-      <a href="https://getinvolved.millersville.edu/organization/tcn" style="color: #ecb431">Get Involved
-        Organizations</a>
-      As well, we have an actively growing <a href="https://discord.com/invite/sSRvdraWx9" style="color: #473dd4">Discord
-        Server</a> where all
-      events and info is posted!
-    </p>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <slideDeck></slideDeck>
-        </div>
-        <div class="col-md-7">
-          <slideDeckRight></slideDeckRight>
+
+    <div class="content">
+      <p>Welcome to the offical TCN Millersville Univeristy Website. Here at TCN we are a club
+        for professional development,
+        networking, and sharing resources with other technology majors.
+        <br>
+        Our goal here is simple: To help everyone in the CS department! Whether your a new incoming freshman or a senior
+        ready to
+        graduate it can be difficult to know where to start in the industry and preparing for such.
+        Interviews, resumes, job market, interships, cover letters, linkedInm it all can be a lot to handle.
+        Thats where we come in! We want to help guide that processes so everyone can be more prepared for the real world!
+        <br>
+        <br>
+        <br>
+        We host events geared to support career development for everyone in the CS & STEM majors at Millersville so all
+        are
+        welcome.
+        We will be having guest speakers, networking, and workshops such as resume-building and mock interviews throughout
+        the fall 2023
+        and spring 2023 semester. The TCN is here for your opportunity to jumpstart your Technology Career!
+        <br>
+        <br>
+        <br>
+        Interested in joining the TCN?
+        You can officially join the club
+        by visiting Millersville's
+        <a href="https://getinvolved.millersville.edu/organization/tcn" style="color: #ecb431">Get Involved
+          Organizations</a>
+        As well, we have an actively growing <a href="https://discord.com/invite/sSRvdraWx9"
+          style="color: #473dd4">Discord
+          Server</a> where all
+        events and info is posted!
+      </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <slideDeck></slideDeck>
+          </div>
+          <div class="col-md-7">
+            <slideDeckRight></slideDeckRight>
+          </div>
         </div>
       </div>
     </div>
+
+
+
     <TCNBottmNavbar></TCNBottmNavbar>
   </div>
 </template>
@@ -90,21 +95,56 @@ a {
 }
 
 p {
-  color: black;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
 }
 
 .tcnHeading {
+  display: flex;
   color: white;
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  background-image: url('../assets/circut-background.gif');
+  /* Fallback color if the background image fails to load */
+  align-items: center;
+  flex-direction: column;
+  padding-top: 270px;
+  padding-bottom: 15px;
+}
+
+.tcnBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../assets/PXL_20230401_181640062.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: 50% 60%;
   background-repeat: no-repeat;
-  /* Additional styles */
-  padding: 20px;
+  filter: brightness(0.7);
+  z-index: -1;
+}
+
+
+/* Subtitle */
+.tcnHeading h4 {
+  text-shadow: 2px 2px 5px black;
+  color: #EEB111;
+}
+
+/* Title */
+.tcnHeading h1 {
+  text-shadow: 2px 2px 20px black;
+  color: #EEB111;
+}
+
+.content {
+  background-color: white;
+  background-image: linear-gradient(135deg, #ffffff 41.67%, #dfdfdf 41.67%, #dfdfdf 50%, #ffffff 50%, #ffffff 91.67%, #dfdfdf 91.67%, #dfdfdf 100%);
+  background-size: 8.49px 8.49px;
+  color: black;
+  padding: 40px;
+  text-align: center;
 }
 
 .discord_button {

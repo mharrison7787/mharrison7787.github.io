@@ -3,8 +3,12 @@
     <TCNnavbar></TCNnavbar>
     <div class="tcnHeading">
       <div class="tcnBackground"></div>
-      <h4><strong>Millersville University's</strong></h4>
-      <h1><strong>TECHNOLOGY CAREER NETWORK</strong></h1>
+      <div class="titleBox">
+        <h4><strong>Millersville University's</strong></h4>
+        <h1><strong>TECHNOLOGY CAREER NETWORK</strong></h1>
+        <a href="https://getinvolved.millersville.edu/organization/tcn" class="link-arrow"> Join the club! <p class="arrow">&#10132;</p></a>
+      </div>
+
     </div>
 
 
@@ -90,8 +94,27 @@ li {
   margin: 0 10px;
 }
 
-a {
-  color: #42b983;
+a.link-arrow {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+.arrow {
+  color:#EEB111;
+  font-size: larger;
+}
+
+.link-arrow p {
+  display: inline-block;
+  transition: 0.1s ease-in;
+}
+
+.link-arrow:hover p {
+  transform: translateX(50%);
+}
+
+a.link-arrow:hover {
+  color: #EEB111;
 }
 
 p {
@@ -108,7 +131,7 @@ p {
   align-items: center;
   flex-direction: column;
   padding-top: 270px;
-  padding-bottom: 15px;
+  padding-bottom: 35px;
 }
 
 .tcnBackground {
@@ -121,22 +144,19 @@ p {
   background-size: cover;
   background-position: 50% 60%;
   background-repeat: no-repeat;
-  filter: brightness(0.7);
   z-index: -1;
 }
 
-
-/* Subtitle */
-.tcnHeading h4 {
-  text-shadow: 2px 2px 5px black;
-  color: #EEB111;
+.titleBox {
+  color: white;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(0, 0, 0, .7);
+  border: 4px solid #EEB111;
 }
 
-/* Title */
-.tcnHeading h1 {
-  text-shadow: 2px 2px 20px black;
-  color: #EEB111;
-}
 
 .content {
   background-color: white;

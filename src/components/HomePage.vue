@@ -359,12 +359,13 @@ p {
   padding: 50px 30px;
   text-align: center;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 /* The actual content div */
 .content-inner {
   background-color: white;
-padding-top: 30px;
+  padding-top: 30px;
   width: 85%;
   display: flex;
   justify-content: space-around;

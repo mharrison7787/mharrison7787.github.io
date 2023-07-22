@@ -1,47 +1,63 @@
 <template>
     <div>
         <TCNnavbar></TCNnavbar>
-        <h1 class="tcnHeading" style="text-align: center;">
-            <br>
-            <span style="font-size: 70%">
-                <br> TECHNOLOGY CAREER NETWORK</span> <br>
-            <span style="font-size: 200%">JOB FAIR FALL 2023</span>
-            <br>
-        </h1>
+        <div class="tcnHeading">
+            <div class="tcnBackground"></div>
+            <div class="titleBox">
+                <h1><strong>COMPUTER SCIENCE JOB FAIR</strong></h1>
+                <h2>Fall 2023</h2>
+                <h3>October 18th 2023 | 3:00-4:00PM</h3>
+                <h3>SMC Multi-Purpose Room</h3>
+            </div>
 
-        <p style="text-align: center;">
-            TCN's Computer Science Job Fair, is back this year in the fall semester!
-            This is where club members can be exposed to some of the best local
-            companies in the tech industry in Lancaster to see what each one is all about!
-            <br>
-            Attendees will be able to network with industry professionals and discover exciting career opportunities.
-            With a wide variety of job opportunities available for those that attend, the Job Fair is sure to provide
-            an engaging and enriching experience to all attendees, making it an ideal platform for those looking to grow
-            and develop their career in tech.
-        </p>
+        </div>
 
-        <h3 style="text-align: center;">Details</h3>
-        <p style="text-align: center;">The current set date for the fall 2023 job fair is October 18th or 19th. The
-            companies
-            attedning will be announced at a later date. Where in the smc multi-purpose room
-        </p>
+        <div class="content">
+            <h2>A Job Fair, Just for Computer Science</h2>
 
-        <div class="container my-4">
-            <div class="row">
-                <div class="col-md-4" v-for="(image, index) in images" :key="index">
-                    <img :src="image.src" class="img-fluid mb-3" alt="Image">
+            <p>
+                TCN's Computer Science Job Fair, is back this year in the fall semester!
+                This is where CS students can be exposed to some of the best local
+                companies in the tech industry in Lancaster to see what each one is all about!
+                <br>
+                Attendees will be able to network with industry professionals and discover exciting career opportunities.
+                With a wide variety of job opportunities available for those that attend, the Job Fair is sure to provide
+                an engaging and enriching experience to everyone, making it an ideal platform for those looking to grow
+                and develop their career in tech.
+            </p>
+
+
+
+            <div class="container my-4">
+                <div class="row">
+                    <div class="col-md-4" v-for="(image, index) in images" :key="index">
+                        <img :src="image.src" class="img-fluid mb-3" alt="Image">
+                    </div>
                 </div>
             </div>
+
+
+
+            <h2>Are you a Company Looking to Attend?</h2>
+            
+            <p>
+                We we welcome any technology companies who are looking for potential employees and interns! Last year we had
+                over 5 companies come out and we always want more!
+            </p>
+            <p>For more information or to reserve your table for this semester's fair, please reach out to the club's 
+                president, Mitchell Harrison
+            </p>
+
+            <h2>Previous Fairs</h2>
+            
+            <p>We are incredibly greatful to all of the companies that participated in our first job fair in Spring 2023!
+            </p>
+            <!-- Have company logos here -->
+
+
+
         </div>
-        <h3 style="text-align: center;">Companies Interested?</h3>
-        <p style="text-align: center;">
-            We we welcome any technology companies who are looking for potential employees and interns! Last year we had
-            over 5 companies come out and we
-            will always want more! Please reach out to us on our Contact page, and a TCN Representative will be sure to get
-            back to you.
 
-
-        </p>
         <TCNBottmNavbar></TCNBottmNavbar>
     </div>
 </template>
@@ -78,6 +94,53 @@ export default {
 .container {
     margin-top: 20px;
 }
+
+.tcnHeading {
+    display: flex;
+    color: white;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    /* Fallback color if the background image fails to load */
+    align-items: center;
+    flex-direction: column;
+    padding-top: 270px;
+    padding-bottom: 35px;
+}
+
+.tcnBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assets/jobfair-9-min.jpg');
+    background-size: cover;
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.titleBox {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(0, 0, 0, .7);
+    border: 4px solid #EEB111;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    background-image: linear-gradient(135deg, #ffffff 41.67%, #dfdfdf 41.67%, #dfdfdf 50%, #ffffff 50%, #ffffff 91.67%, #dfdfdf 91.67%, #dfdfdf 100%);
+    background-size: 8.49px 8.49px;
+    color: black;
+    padding: 50px 30px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
 
 /* Add custom CSS to space out the images and add a new line between rows */
 .row {

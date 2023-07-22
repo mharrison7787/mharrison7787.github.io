@@ -2,15 +2,23 @@
   <div>
     <nav class="navbar">
       <ul class="navbar-list">
-        <li class="navbar-item clickable"><router-link to="/">HOME</router-link></li>
-        <li class="navbar-item clickable"><router-link to="/MeetingsPage">MEETINGS</router-link></li>
+        <router-link style="text-decoration: none; color: inherit;" to="/">
+          <li class="navbar-item clickable">HOME</li>
+        </router-link>
+        <router-link style="text-decoration: none; color: inherit;" to="/MeetingsPage">
+          <li class="navbar-item clickable">MEETINGS</li>
+        </router-link>
         <li class="navbar-item"></li>
         <li class="navbar-item">
-          <router-link to="/"><img src="../assets/MU_TCN-logo-min-p-500.png" width="250%"> </router-link>
+          <router-link to="/"><img src="../assets/MU_TCN-logo-min-p-500.png" width="250%"></router-link>
         </li>
         <li class="navbar-item"></li>
-        <li class="navbar-item clickable"> <router-link to="/JobFairPage">JOB FAIR</router-link></li>
-        <li class="navbar-item clickable"><router-link to="/ContactPage">CONTACT</router-link></li>
+        <router-link style="text-decoration: none; color: inherit;" to="/JobFairPage">
+          <li class="navbar-item clickable">JOB FAIR</li>
+        </router-link>
+        <router-link style="text-decoration: none; color: inherit;" to="/ContactPage">
+          <li class="navbar-item clickable">CONTACT</li>
+        </router-link>
       </ul>
     </nav>
   </div>
@@ -43,9 +51,11 @@ body {
   list-style: none;
   margin: auto;
   justify-content: right;
+  align-items: center;
 }
 
 .navbar-item {
+  text-decoration: none;
   padding: 30px 35px;
   color: white;
   cursor: pointer;
@@ -56,6 +66,12 @@ body {
   letter-spacing: 1.7px;
   position: relative;
   /* Added */
+
+}
+
+.navbar-item.clickable:hover {
+  color: black;
+  background-color: #EEB111;
 
 }
 
@@ -82,7 +98,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 3px;
-  background-color: #ecb431;
+  background-color: #EEB111;
 
 }
 </style>

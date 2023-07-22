@@ -8,26 +8,27 @@ import ContactPage from '@/components/ContactPage.vue';
 Vue.use(Router)
 
 export default new Router({
-    routes: [
-        {
-            path: '/',
-            name: 'HomePage',
-            component: HomePage
-        },
-        {
-            path: '/JobFairPage',
-            name: 'JobFairPage',
-            component: JobFairPage
-        },
-        {
-            path: '/MeetingsPage',
-            name: 'MeetingsPage',
-            component: MeetingsPage
-        },
-        {
-            path: '/ContactPage',
-            name: 'ContactPage',
-            component: ContactPage
-        },
-    ]
-})
+  base: "/mharrison7787.github.io/",
+  routes: [
+    {
+      path: "/",
+      name: "HomePage",
+      component: HomePage,
+    },
+    {
+      path: "/JobFairPage",
+      name: "JobFairPage",
+      component: JobFairPage,
+    },
+    {
+      path: "/MeetingsPage",
+      name: "MeetingsPage",
+      component: MeetingsPage,
+    },
+    {
+      path: "/ContactPage",
+      name: "ContactPage",
+      component: ContactPage,
+    },
+  ],
+});

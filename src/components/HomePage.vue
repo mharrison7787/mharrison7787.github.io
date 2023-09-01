@@ -91,7 +91,7 @@
           </div>
 
           <div class="img-wrapper col">
-            <img src="../assets/WebFx.jpg">
+            <img src="../assets/Stephen.jpg">
           </div>
         </div>
 
@@ -160,19 +160,6 @@
 
 
         </div>
-
-
-
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <slideDeck></slideDeck>
-            </div>
-            <div class="col-md-7">
-              <slideDeckRight></slideDeckRight>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -184,15 +171,12 @@
 
 <script>
 import TCNnavbar from '@/components/TCNnavbar.vue';
-import slideDeck from '@/components/slideDeck.vue';
-import slideDeckRight from '@/components/slideDeckRight.vue';
 import TCNBottmNavbar from '@/components/TCNBottmNavbar.vue';
 export default {
   name: 'HomePage',
   components: {
     TCNnavbar,
-    slideDeck,
-    slideDeckRight,
+   
     TCNBottmNavbar,
   }
 }

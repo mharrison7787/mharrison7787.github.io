@@ -2,7 +2,7 @@
     <div>
         <TCNnavbar></TCNnavbar>
         <div class="tcnHeading">
-            <div class="tcnBackground"></div>
+            <div class="tcnBackground-JobFair"></div>
             <div class="titleBox">
                 <h1><strong>COMPUTER SCIENCE JOB FAIR</strong></h1>
                 <h2>Fall 2023</h2>
@@ -136,7 +136,7 @@ export default {
     padding-bottom: 35px;
 }
 
-.tcnBackground {
+.tcnBackground-JobFair {
     position: absolute;
     top: 0;
     left: 0;

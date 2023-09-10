@@ -65,7 +65,7 @@
   <h2>Mitchell Harrison</h2>
   <p class="card-title">President</p>
   <p> <a href = "mdharri2@millersville.edu">mdharri2@millersville.edu</a></p>
-  <p><a href="#"><i class="fa fa-linkedin"></i></a></p>
+  <p><a href="https://www.linkedin.com/in/mitchell-harrison-9570b5253/"><i class="fa fa-linkedin"></i></a></p>
 </div>
           </div>
           <div class="col">
@@ -76,7 +76,7 @@
   <h2>Justin Stevens</h2>
   <p class="card-title">Vice President</p>
   <p> <a href = "jmsteve1@millersville.edu">jmsteve1@millersville.edu</a></p>
-  <p><a href="#"><i class="fa fa-linkedin"></i></a></p>
+  <p><a href="https://www.linkedin.com/in/justin-stevens-77546021b/"><i class="fa fa-linkedin"></i></a></p>
 </div>
           </div>
         </div>
@@ -86,10 +86,10 @@
 
 <div class="card">
   <img src="../assets/Jon-photo.jpg" alt="John" style="width:100%">
-  <h2>Jonahtan River</h2>
-  <p class="card-title">Treasure</p>
+  <h2>Jonathan Rivera</h2>
+  <p class="card-title">Treasurer</p>
   <p> <a href = "jjriver1@millersville.edu">jjriver1@millersville.edu</a></p>
-  <p><a href="#"><i class="fa fa-linkedin"></i></a></p>
+  <p><a href="https://www.linkedin.com/in/jonathan-rivera-2a0625212/"><i class="fa fa-linkedin"></i></a></p>
 </div>
           </div>
           <div class="col">
